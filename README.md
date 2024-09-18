@@ -12,15 +12,14 @@ get it).
 
 **Engine files**
 Download cosc343Raj.zip.  Extract it into your project folder.  You get several files:
-human_agent.py - agent that provides text based interface for human player
-my_agent.py – script where you implement your minimax agent (for Assignment 1)
-my_rlagent.py - script where you implement your RL agent  (for Assignment 2)
-raj.py -the main game file - you run this script to run the game
-random_agent.py - agent that makes random bids
+* human_agent.py - agent that provides text based interface for human player
+* my_rlagent.py - Reinforcement learning agent
+* raj.py -the main game file - you run this script to run the game
+* random_agent.py - agent that makes random bids
 settings.py - contains game settings, which you can change to run the game under various configurations
 value_agent.py - agent playing fixed strategy of betting the same value as the item (if possible)
 valueplus_agent.py - agent playing fixed strategy of betting next higher value over the one matching (if possible) the item value
-The set of files gives you a completely working Python code for running the Raj game.  You need to do is to modify and add code to my_agent.py (for Assignment 1) or to my_rlagent.py (for Assignment 2) to implement a model that governs your agent's behaviour in the game.  You can also modify settings.py to reconfigure the game (for instance to change the agent script that is used to play the game).  After submission, your agent will be tested under different game settings.
+The set of files gives you a completely working Python code for running the Raj game. You can also modify settings.py to reconfigure the game (for instance to change the agent script that is used to play the game).
 
 **Running the code**
 You can run the simulation as it is, without changing any code.  Just need to open the folder VSCode, set the Python interpeter to 'cosc343' (as you do in the labs) and run raj.py.  On the lab machines the cosc343 environment is already installed for you.  To run the code on your own device make sure to install Anaconda and setup the cosc343 environment as instructed in the "Python+VSCode setup (your own device)" in the "Labs" section of Blackboard.
