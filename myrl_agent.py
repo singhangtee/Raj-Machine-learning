@@ -19,7 +19,7 @@ training = [ ("value_agent.py", "valueplus_agent.py", 50000),
 
 # Name of the file to save the agent to.  If you want to retrain your agent
 # delete that file.
-save_filename="saved_myrl_agent.pkl"
+save_filename="policy.pkl"
 
 class RajAgent():
    """
