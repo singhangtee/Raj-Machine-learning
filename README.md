@@ -19,6 +19,7 @@ I utilized Temporal Difference Q-learning with softmax exploration to train an a
 ![image](https://github.com/user-attachments/assets/38f1b5ff-3d20-4a8b-a4e3-e44167b943f3)
 
 I have a win rate of 86% against (value_agent, valueplus_agent) and 63% against (random_agent, valueplus_agent). However, I only have a 46% win rate against (random_agent,random_agent) with the remaining 54% almost evenly split between being second place and being dead last. For the score, my agent has a higher score against every opponent in every scenario.
+
 # Engine files
 Download cosc343Raj.zip.  Extract it into your project folder.  You get several files:
 * human_agent.py - agent that provides text based interface for human player
@@ -28,8 +29,10 @@ Download cosc343Raj.zip.  Extract it into your project folder.  You get several 
 * settings.py - contains game settings, which you can change to run the game under various configurations
 * value_agent.py - agent playing fixed strategy of betting the same value as the item (if possible)
 * valueplus_agent.py - agent playing fixed strategy of betting next higher value over the one matching (if possible) the item value
+* view-policy.py - prints out everything in policy.pkl in terminal for easy viewing
+* policy.pkl - my best performing model that was trained using my_rlagent. If this file exists, my_rlagent will use the policy in this file to play the game. Delete this file to retrain the model
 * The set of files gives you a completely working Python code for running the Raj game. You can also modify settings.py to reconfigure the game (for instance to change the agent script that is used to play the game).
-
+  
 # Running the code
 You can run the simulation as it is, without changing any code. The default settings.py sets up a 6-bid game to be played by myrl_agent.py against value_agent.py and valueplus_agent.py on the item values (-2,-1,1,2,3,4) and with card values (1,2,3,4,5,6); played 100 time using random seed=0 (meaning, the same order of bids will be chosen when running raj.py multiple times). 
 
